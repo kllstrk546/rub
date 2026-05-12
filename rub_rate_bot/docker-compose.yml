@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: sqlite+aiosqlite:////app/data/bot.db
+      TELETHON_SESSION_NAME: /app/telethon/rub_rate_bot
+    volumes:
+      - ./data:/app/data
+      - ./telethon:/app/telethon
+    restart: unless-stopped

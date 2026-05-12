@@ -1,0 +1,14 @@
+2026-05-12 14:02:46,121 INFO [__main__] Initializing database.
+2026-05-12 14:02:46,824 INFO [telethon.network.mtprotosender] Connecting to 149.154.167.51:443/TcpFull...
+2026-05-12 14:02:46,891 INFO [telethon.network.mtprotosender] Connection to 149.154.167.51:443/TcpFull complete!
+2026-05-12 14:02:47,404 INFO [src.services.telegram_sources] Telethon source client started with session rub_rate_bot.
+2026-05-12 14:02:47,556 INFO [src.services.telegram_sources] Restored latest RateSnapshot id=18 from database.
+2026-05-12 14:02:47,559 INFO [src.services.telegram_sources] Rate refresh started: reason=startup.
+2026-05-12 14:02:47,730 INFO [src.services.telegram_sources] Nobitex source message inspected: message_id=200653 parsed=181149.
+2026-05-12 14:02:47,841 INFO [src.services.telegram_sources] Rapira source message inspected: message_id=8572 parsed=76.51.
+2026-05-12 14:02:47,882 INFO [src.services.telegram_sources] Rate refresh saved: reason=startup nobitex_message_id=200653 nobitex_value=181149 rapira_message_id=8572 rapira_value=76.51 display=2367.
+2026-05-12 14:02:47,884 INFO [__main__] aiogram Bot and Dispatcher initialized.
+2026-05-12 14:02:47,885 INFO [__main__] Starting aiogram polling and Telethon source reader.
+2026-05-12 14:02:47,886 INFO [src.services.telegram_sources] Next aligned rate refresh scheduled in 147.113 seconds.
+2026-05-12 14:02:47,889 INFO [aiogram.dispatcher] Start polling
+2026-05-12 14:02:48,224 INFO [aiogram.dispatcher] Run polling for bot @exchange_toman_rub_bot id=8664342943 - 'exchange_toman_rub'

@@ -1,0 +1,17 @@
+.env
+*.db
+*.sqlite
+*.sqlite3
+*.session
+*.session-journal
+
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+
+data/
+telethon/

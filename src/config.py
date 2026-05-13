@@ -22,9 +22,18 @@ class Settings(BaseSettings):
 
     database_url: str = "sqlite+aiosqlite:///./rub_rate_bot.db"
 
-    telegram_bot_token: str | None = None
-    telegram_api_id: int | None = None
-    telegram_api_hash: str | None = None
+    telegram_bot_token: str | None = Field(
+        default=None,
+        validation_alias=AliasChoices("TELEGRAM_BOT_TOKEN", "BOT_TOKEN"),
+    )
+    telegram_api_id: int | None = Field(
+        default=None,
+        validation_alias=AliasChoices("TELEGRAM_API_ID", "API_ID"),
+    )
+    telegram_api_hash: str | None = Field(
+        default=None,
+        validation_alias=AliasChoices("TELEGRAM_API_HASH", "API_HASH"),
+    )
     telethon_session_name: str = "rub_rate_bot"
     nobitex_source: str | None = None
     rapira_source: str | None = None
